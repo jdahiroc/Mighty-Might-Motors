@@ -1,0 +1,134 @@
+/*Font Link*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/*NAVIGATION SECTION*/
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    position: relative;
+    max-width: 80px; 
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    display: inline-block;
+    color: #1e1e1e;
+    font-weight: 400;
+    margin-left: 20px;
+    padding: 10px 15px 10px 15px;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: 0.5s;
+    animation: fadeIn 1s;
+   -webkit-animation: fadeIn 3s;
+   -moz-animation: fadeIn 3s;
+   -o-animation: fadeIn 3s;
+   -ms-animation: fadeIn 3s;
+}
+
+header ul li a:hover {
+    color: #ffffff;
+   background-color: #E38B29;
+   padding: 5px 10px 5px 10px;
+}
+
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1;}
+}
+
+@-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1;}
+}
+
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1;}
+}
+/*END NAVIGATION*/
+
+body {
+    padding-top: 8em;
+}
+
+main {
+    width: 100%;
+    max-width: 400px;
+    padding: 5rem 4rem;
+    margin: auto;
+    border-radius: 5%;
+    background-color: #ffffff;
+    background-image: linear-gradient(342deg, #ffffff 0%, #e38b29 100%);
+
+
+}
+.h3 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppin', sans-serif;
+    font-weight: 900;
+    color: #ffffff;
+}
+
+.form-control { /*textfield*/
+    margin-bottom: 1.5em;
+    color: #ffffff;
+}
+
+.registerButton {
+    outline: #E38B29;
+    background-color: #E38B29;
+    margin-top: 25px;
+    border: #E38B29 1px solid;
+    border-radius: 10px;
+    padding: 2px 10px 2px 10px;
+}
+
+.registerButton a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 12px;  
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+
+
