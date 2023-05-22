@@ -1,5 +1,9 @@
 <?php
 require_once('connect.php');
+
+if (!isset($_SESSION['admin'])) {
+    header('location:loginuser.php');
+}
 ?>
 
 <!--HTML-->
@@ -13,10 +17,23 @@ require_once('connect.php');
     <link rel="stylesheet" href="/MIGHTY-MIIGHT-MOTOR/css/UserManagementInterface.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js" type="text/javascript"></script>
     <title>User Management</title>
 </head>
 
 <body>
+    <nav class="navbar bg-body-tertiary">
+        <form class="container-fluid justify-content-start">
+            <button class="btn btn-light me-2" type="button">Users</button>
+            <button class="btn btn-light me-2" type="button">Products</button>
+            <button class="btn btn-light me-2" type="button">Transaction
+                History</button>
+            <button class="d-flex flex-row-reverse btn btn-danger" type="button"><a
+                    class="text-decoration-none text-light-emphasis" href="/MIGHTY-MIIGHT-MOTOR/index.html">Log
+                    Out</a></button>
+        </form>
+    </nav>
     <div class="d-flex justify-content-center mt-4">
         <h1>User Management</h1>
     </div>

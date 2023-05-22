@@ -49,3 +49,6 @@ table {
   font-family: 'Poppins', sans-serif;
 }
 
+nav form button .text-decoration-none {
+  color: #FFFFFF;
+}
